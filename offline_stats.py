@@ -4,9 +4,6 @@ import sys
 from tqdm import tqdm
 from datetime import datetime
 
-# Total offline time: 01:51.20 for: 2020-09-27
-# Total offline time: 00:00.26 for: 2020-09-28
-# Total offline time: 04:05.00 for: 2020-10-08
 
 def unique(lst): 
   
@@ -84,8 +81,6 @@ total_offline_by_date = []
 
 original_out = sys.stdout
 
-# if os.path.exists("total.txt"):
-#   os.remove("total.txt")
 
 with open('offline.txt', 'w') as f, open('total.txt', 'w') as t:
 
@@ -93,7 +88,7 @@ with open('offline.txt', 'w') as f, open('total.txt', 'w') as t:
     for date in tqdm(dates, desc=f'Writing to offline.txt...'):
         day = [x for x in lst if date in x]
         
-        for k in range(len(day)): # tqdm(range(len(day)), desc='Writing daily data to offline.txt')
+        for k in range(len(day)): 
 
             if 'offline' in day[k]:
                 offline_lst.append(day[k])
