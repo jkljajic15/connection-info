@@ -12,8 +12,7 @@ It can be made to run on startup simply by copying a shortcut to a Startup folde
 After about 800k lines (arround 12 days of data) in log file, it is 23MB in size.
 ## Prerequisits
 1. Python 3 installed
-2. tqdm package for progress bar (optional)
-  **pip install tqdm**
+2. tqdm package for progress bar (optional) - **pip install tqdm**
 ## Usage
 1. Download zip file and extract it
 2. If you want the program to run on startup copy the shortcut to Startup folder (optional)
